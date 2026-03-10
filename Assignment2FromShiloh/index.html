@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h1>My Study Dashboard</h1>
+        </center>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tasks</a>
+        <a href="#">Profile</a>
+    </nav>
+    <main>
+        <center>
+            <div id="welcome"></div>
+
+        </center>
+        <div class="container">
+
+            
+            <section class="card">
+                <h1>Shiloh Mbuka</h1>
+                <p>I am studying Computer Science and learning how computers and software work. My course covers programming, web development, and problem-solving. I enjoy making simple projects and learning how to build websites and applications step by step.</p>
+                <img src="cat.jpg" alt="Picture of a ginger cat" width="150" height="200" class="photo">
+            </section>
+            <section class="card">
+                <h1>Weekly Goals</h1>
+                <ul>
+                    <li>Finish 230 assignment</li>
+                    <li>Work on 335 group project</li>
+                    <li>Start watching figma videos for 280</li>
+                    <li>Study for 355 assignment</li>
+                </ul>
+
+                <button id="showGoals">Show Goals</button>
+                <ul id="goalList"></ul>
+            </section>
+            <section class="card">
+                <h1>Study Status</h1>
+                <p class="status">Status: </p>
+                <p>Study session today: <span id="counter">0</span></p>
+                <button type="button" id="add">Add session</button>
+                <button type="button" id="reset">Reset</button>
+            </section>
+            </div>
+    </main>
+    <footer>
+        <center>
+            <p>© 2026 Shiloh Mbuka | CS230</p>
+        </center>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

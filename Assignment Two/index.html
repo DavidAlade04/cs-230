@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <header>
+            <title>Welcome</title>
+            <div id="title">
+            <h1>My Study Dashboard</h1>
+            </div>
+        </header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Tasks</a>
+            <a href="">Profile</a>
+        </nav>
+        <main>
+
+            <center>
+            <h2 id="center" style="color: blueviolet;"></h2>
+            </center>
+
+            <div class="container">
+            <section class="card">
+                <h1>David Alade</h1>
+                <p>Computer Science and Software Engineering Student with an interest in Problem Solving</p>
+                <img src="Wallpaper.webp" alt="Legendary Tree" width="200" height="150" class="image"/>
+            </section>
+            <section class="card">
+                <h1>Weekly Goals</h1>
+                <ul>
+                <li>Finish CS230 Assignment</li>
+                <li>Finish UI, UX Assignment</li>
+                <li>Study CS211</li>
+                <li>Study CS355</li>
+                </ul>
+                <button id="showGoals">Show Goals</button>
+                <ul id="goalList"></ul>
+            </section>
+            <section class="card">
+                <h1>Study Status</h1>
+                <p class ="status">Status: </p>
+                <p>Study session today: <span id="counter">0</span></p>
+                <button type="button" id="add">Add session</button>
+                <button type="button" id="reset">Reset</button>
+            </section>
+            </div>
+        </main>
+        <footer>© 2026 David Alade | CS230</footer>
+        <script src="script.js"></script>
+    </body>
+</html>

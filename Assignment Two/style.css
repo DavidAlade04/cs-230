@@ -1,0 +1,141 @@
+
+/*Global Sizing*/
+*{
+    box-sizing: border-box;
+}
+/*Hover animation*/
+.cards:hover{
+ transform: scale(1.2);
+}
+/*Global Settings*/
+body{
+    background-color: rgb(247, 247, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/*Navigation Bar Settings*/
+nav {
+    display: flex;
+    padding: 20px;
+    font-size: 18px;
+    gap: 10px;
+    background-color: blueviolet;
+    transition: transform 0.3s ease;
+}
+/*Navigation Decorations*/
+nav a{
+    text-decoration: none;
+    color: white;
+    word-spacing: 30px;
+}
+/*On Hover change colour and size*/
+nav a:hover{
+color: mediumblue;
+ transform: scale(1.2);
+}
+/*Card Settings*/
+.card{
+    border: 8px solid rgb(96, 169, 193);
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    height: 450px;
+    margin: 20px;
+    margin-left: 25px;
+    margin-top: 25px;
+    box-shadow: 5px 5px 5px 2px lightgray;
+    background-color: rgb(118, 95, 187);
+    transition: transform 0.3s ease;
+}
+/*On Card Hover change size*/
+.card:hover{
+ transform: scale(1.2);
+}
+/*Container Class to Hold all Cards*/
+.container{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+/*Add green glow to "active"*/
+.status::after{
+    content : "Active";
+    color:rgb(69, 225, 69);
+}
+/*Title*/
+#title{
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: center;
+    margin:0 auto;
+}
+/*Footer Settings*/
+footer{
+    position: fixed;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 25px;
+    left: 0;
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-top: 5px blueviolet;
+}
+/*Media Query, when ≤700 change settings*/
+@media (max-width: 700px){
+
+/*Keep Header the same*/
+header{
+    background-color: blueviolet;
+    padding: 10px;
+
+}
+/*Keep Footer the same*/
+footer{
+    width: 100%;
+    background-color: blueviolet;
+    padding: 25px;
+    left: 0;
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-top: 5px blueviolet;
+}
+
+/*Let Nav Stack Horizontally*/
+    
+nav{
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    flex-direction: column;
+    align-items: center;
+}
+/*Reduce font size*/
+p{
+        font-size: 15px;
+}
+
+h1{
+        font-size: 28px;
+}
+/*Disable image*/
+.image{
+    display: none;
+}
+/*Reduce Card Size*/
+.card{
+    width: 400px;
+    height: 450px;
+}
+}
+
+button{
+    border-radius: 30px;
+    color: blueviolet;
+    background-color: rgb(221, 221, 221);
+}
